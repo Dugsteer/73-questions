@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content=" A fun, free  online talking for a minute game for intermediate students of English"
+    />
+    <meta
+      name="keywords"
+      content="One minute talking game haven't a clue sorry ESL English online"
+    />
+    <title>Talking Game</title>
+    <link rel="icon" type="image/png" href="favicon.png" ; />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/social.css" />
+    <script src="csi.min.js"></script>
+    <script
+      data-ad-client="ca-pub-6192312197226967"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+  </head>
+  <body>
+    <div class="social">
+      <div class="social-item">
+        <a
+          href="#"
+          onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u=https://esl-ology.com/bingo-animals.html', 
+      'facebook-share-dialog', 
+      'width=626,height=436'); 
+    return false;"
+        >
+          <img src="img/social/facebook.png" />
+        </a>
+      </div>
+      <div class="social-item">
+        <a
+          href="#"
+          onclick="
+    window.open(
+'https://pinterest.com/pin/create/button/?url=http://esl-ology.com&media=https://esl-ology.com/img/london.png&description=Esl-ology.com%20Free%20fun%20tools%20for%20ESL%20teachers%20and%20students%20to%20use%20online.',
+     'pinterest-share-dialog', 
+      'width=626,height=436'); 
+    return false;"
+        >
+          <img src="img/social/pinterest.png" />
+        </a>
+      </div>
+      <div class="social-item">
+        <a
+          href="#"
+          onclick="
+    window.open(
+'https://twitter.com/intent/tweet?url=http://esl-ology.com&text=Esl-ology.com%20Free%20fun%20tools%20for%20ESL%20teachers%20and%20students%20to%20use%20online.',
+     'twitter-share-dialog', 
+      'width=626,height=436'); 
+    return false;"
+        >
+          <img src="img/social/twitter.png" />
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a
+          href="https://www.youtube.com/channel/UCvl0weUrlWDhQOimqfRmZUA"
+          target="_blank"
+        >
+          <img src="img/social/youtube.png"
+        /></a>
+      </div>
+    </div>
+
+    <div class="loader-div" id="loaderDiv" onload="checkForTop();">
+      <div class="loader-container">
+        <img class="ghost" src="img/maze.png" alt="" />
+      </div>
+    </div>
+
+    <div class="nav-bar" id="navbar">
+      <a href="index.html" class="nav-bar__logo">
+        <svg class="icon-header nav-bar__logo-img">
+          <use xlink:href="sprite2.svg#Buho" onclick="scrollUp()"></use>
+        </svg>
+      </a>
+      <h3 class="nav-bar__title">Esl-Ology.Com</h3>
+      <div class="nav-bar__title-page">
+        <span class="nav-bar__title-page-main" id="pageTitle"
+          >TALK FOR A MINUTE</span
+        >
+      </div>
+      <div class="nav-bar__links">
+        <a href="index.html" class="nav-bar__link link3">Home</a>
+        <svg
+          viewBox="0 0 100 80"
+          width="40"
+          height="20"
+          onclick="toggler();"
+          id="menu"
+          class="menu"
+        >
+          <rect width="100" height="12"></rect>
+          <rect y="30" width="100" height="12"></rect>
+          <rect y="60" width="100" height="12"></rect>
+        </svg>
+      </div>
+    </div>
+
+    <div id="wrapper" class="wrapper">
+      <div class="sense">
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
+        <!-- Banner unit -->
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-6192312197226967"
+          data-ad-slot="4785921039"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+      <div class="sidebar-container" id="sidebar">
+        <div data-include="sidebar.html"></div>
+      </div>
+
+      <div class="introduction">
+        <div class="introduction__img" id="mainpic">
+          <div class="clockFace">
+            <div class="centre"></div>
+            <div class="hand hour-hand"></div>
+            <div class="hand second-hand"></div>
+            <div class="hand minute-hand"></div>
+          </div>
+        </div>
+        <div class="introduction__text">
+          <h1>TALK FOR A MINUTE RULES</h1>
+          <p>
+            Click the first team's name to start the clock. The other team may
+            challenge for Hesitation, Repetition, going Off Topic or Bad
+            English. After a challenge, press PAUSE. If the challenge is
+            successful, subtract the relevant points and press the challenging
+            team's button to continue. The team speaking when the countdown ends
+            get 50 points. Play for as many rounds as there are students. Use
+            Oops to correct mistakes. Happy talking!
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content__scores content__scores-teamA" id="teamA">
+          <div class="blobA" id="blobA"></div>
+          <h3 class="aScores" id="aScores">TEAM A</h3>
+          <p id="teamAscore" class="team-score">100</p>
+        </div>
+        <div class="content__scores content__scores-teamB" id="teamB">
+          <div class="blobB" id="blobB"></div>
+          <h3 class="aScores" id="bScores">TEAM B</h3>
+          <p id="teamBscore" class="team-score">100</p>
+        </div>
+
+        <div class="content__instructions-text">
+          <h2>Talk for a minute about...</h2>
+          <p id="contentQuestion">... something amazing</p>
+        </div>
+        <div class="content__instructions-timer" id="timerClock">60</div>
+
+        <div class="content__slider"></div>
+        <div class="content__slider2"></div>
+
+        <div class="content__points-group">
+          <div class="content__points-reset" id="reset">
+            <p class="topicClass">Reset</p>
+          </div>
+
+          <div class="content__points-topics" id="topics">
+            <p class="topicClass">New Topic</p>
+          </div>
+
+          <div class="content__points-go" id="bigButton">
+            <p class="buttonClass">Pause</p>
+          </div>
+        </div>
+        <div class="content__points-categories">
+          <h4>
+            Hesitation
+            <span
+              ><button class="btn btnA" id="hesitationA">-5</button
+              >&nbsp&nbsp&nbsp<button class="btn btnB" id="hesitationB">
+                -5
+              </button></span
+            >
+          </h4>
+          <h4>
+            Repetition
+            <span
+              ><button class="btn btnA" id="repetitionA">-10</button
+              >&nbsp&nbsp&nbsp<button class="btn btnB" id="repetitionB">
+                -10
+              </button></span
+            >
+          </h4>
+          <h4>
+            Off Topic
+            <span
+              ><button class="btn btnA" id="offTopicA">-10</button
+              >&nbsp&nbsp&nbsp<button class="btn btnB" id="offTopicB">
+                -10
+              </button></span
+            >
+          </h4>
+          <h4>
+            English!!
+            <span
+              ><button class="btn btnA" id="englishA">-10</button
+              >&nbsp&nbsp&nbsp<button class="btn btnB" id="englishB">
+                -10
+              </button></span
+            >
+          </h4>
+          <h4>
+            Oops
+            <span
+              ><button class="btn btnA" id="oopsA">+5</button
+              >&nbsp&nbsp&nbsp<button class="btn btnB" id="oopsB">
+                +5
+              </button></span
+            >
+          </h4>
+        </div>
+      </div>
+
+      <div class="sense-bottom">
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
+        <!-- Vertical ad -->
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-6192312197226967"
+          data-ad-slot="3073690633"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+      <div class="links">
+        <p class="links__text">Try our other TEFL games.</p>
+        <div class="links__images">
+          <div class="links__images-1 figure">
+            <a href="questions-maze.html">
+              <img src="img/QuestionsMaze.png" alt=""
+            /></a>
+            <figcaption>Grammar Mazes</figcaption>
+          </div>
+          <div class="links__images-1 figure">
+            <a href="boardgame-player.html">
+              <img src="img/boardgame.png" alt=""
+            /></a>
+            <figcaption>Play Any Boardgame</figcaption>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__copyright" id="footer">
+        <p>© 2021 Copyright Esl-ology.com & copyright owners.</p>
+        <p>
+          Image credits <a href="questions-maze-credits.html">here</a>. Thanks,
+          guys!
+        </p>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
